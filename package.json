@@ -1,0 +1,46 @@
+{
+  "name": "package",
+  "version": "0.1.0",
+  "description": "Arvin's React Boilerplate",
+  "main": "src",
+  "scripts": {
+    "webpack": "webpack",
+    "build-babel": "npm run build-babel-client && npm run build-babel-server",
+    "build-babel-client": "babel src/client -d build/view",
+    "build-babel-server": "babel src/server -d build",
+    "build": "npm run build-babel && npm run webpack",
+    "start": "node ./build/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goodoomoodoo/raw-react-boilerplate.git"
+  },
+  "keywords": [
+    "React",
+    "Nodejs"
+  ],
+  "author": "Arvin Lin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goodoomoodoo/raw-react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/goodoomoodoo/raw-react-boilerplate#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-css-modules-transform": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "mini-css-extract-plugin": "^0.4.3",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "react": "^16.5.2",
+    "react-css-modules": "^4.7.7",
+    "react-dom": "^16.5.2"
+  }
+}
