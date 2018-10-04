@@ -1,0 +1,15 @@
+.footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background: #555;
+    text-align: center;
+}
+
+.footer-item {
+    display: inline-block;
+    padding: .5em;
+    color: #e3e3e3;
+    font-weight: lighter;
+    font-size: .8em;
+}

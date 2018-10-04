@@ -1,0 +1,23 @@
+.board {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../img/kids.jpg');
+}
+
+.veil {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: inherit;
+    opacity: .5;
+    background: #eee;
+}

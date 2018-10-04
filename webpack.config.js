@@ -28,6 +28,10 @@ const moduleRules = {
                     }
                 }
             ]
+        },
+        {
+            test: /\.jpg$/,
+            loader: 'file-loader'
         }
     ]
 };

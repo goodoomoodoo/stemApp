@@ -1,0 +1,60 @@
+.nav-bar {
+    position: fixed;
+    background: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    box-shadow: 0 0 10px #ddd;
+    display: grid;
+    grid-template-columns: auto 20% auto auto auto auto auto auto auto;
+}
+
+.nav-bar-title {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.nav-bar-first-el {
+    grid-column-start: 3;
+}
+
+.nav-bar-el {
+    padding: .5em;
+    color: #888;
+}
+
+.nav-bar-el:hover {
+    background: #aaa;
+    color: #eee;
+}
+
+.nav-bar-el:hover .nav-bar-dmenu {
+    display: block;
+    visibility: visible;
+}
+
+.nav-bar-dmenu {
+    position: absolute;
+    background: white;
+    box-shadow: 0 .3em .5em #555;
+    display: none;
+    visibility: hidden;
+    color: #888;
+    width: 10%;
+    margin-top: .5em;
+}
+
+.nav-bar-dmenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar-dmenu li {
+    padding: .5em;
+}
+
+.nav-bar-dmenu li:hover {
+    background: #eee;
+}
